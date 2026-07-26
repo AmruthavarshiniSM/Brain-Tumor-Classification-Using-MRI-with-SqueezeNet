@@ -1,8 +1,16 @@
+import Navbar from "./components/layout/Navbar";
+import HeroSection from "./components/layout/HeroSection";
+import AboutSection from "./components/common/AboutSection";
+import Footer from "./components/common/Footer";
+
 function App() {
   return (
-    <div>
-      <h1>Brain Tumor Classification using MRI with SqueezeNet</h1>
-    </div>
+    <>
+      <Navbar />
+      <HeroSection />
+      <AboutSection />
+      <Footer />
+    </>
   );
 }
 
