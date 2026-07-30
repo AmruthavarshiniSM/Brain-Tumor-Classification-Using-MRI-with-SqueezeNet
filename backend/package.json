@@ -1,0 +1,22 @@
+{
+  "name": "brain-tumor-backend",
+  "version": "1.0.0",
+  "description": "Production-ready backend for the Brain Tumor Classification app",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^4.21.2",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.1",
+    "multer": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
