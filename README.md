@@ -32,3 +32,52 @@ The model is trained from the real Kaggle dataset using a TensorFlow/Keras image
 ## Backend
 
 The Express backend remains unchanged for the frontend integration, while the Python inference service is available through ai-model/app.py.
+
+## Run locally
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/AmruthavarshiniSM/Brain-Tumor-Classification-Using-MRI-with-SqueezeNet.git
+cd Brain-Tumor-Classification-Using-MRI-with-SqueezeNet
+```
+
+### 2. Install dependencies
+
+Frontend:
+
+```bash
+cd frontend
+npm install
+```
+
+Backend:
+
+```bash
+cd ../backend
+npm install
+```
+
+### 3. Start the app
+
+Start the backend:
+
+```bash
+cd ../backend
+npm start
+```
+
+Start the frontend in a second terminal:
+
+```bash
+cd ../frontend
+npm run dev
+```
+
+The frontend will be available at http://localhost:5173 and the backend at http://localhost:5000.
+
+### 4. Notes
+
+- The trained model file is expected in the ai-model folder.
+- If you are using the local dataset, place it under the dataset folder before training or inference.
+- Keep large model and dataset files locally if you do not want to push them to Git.
