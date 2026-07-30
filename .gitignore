@@ -27,7 +27,10 @@ frontend/.vite/
 .env.*
 !.env.example
 
-# Uploads and temporary files
+# Large project assets and trained models
+ai-model/
+dataset/
+database/
 backend/uploads/
 backend/tmp/
 backend/logs/
@@ -35,6 +38,14 @@ uploads/
 temp/
 *.tmp
 *.log
+*.keras
+*.h5
+*.joblib
+*.pkl
+*.pt
+*.pth
+*.bin
+*.onnx
 
 # OS/editor files
 .DS_Store
